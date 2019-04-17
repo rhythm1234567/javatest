@@ -18,7 +18,7 @@ System.out.println(Arrays.toString(copy));
 Scanner s=new Scanner(System.in);
 int x=s.nextInt();
 int index=Arrays.binarySearch(copy, x);
-System.out.println(index);
+System.out.println("位置是"+index);
 	}
 
 }
