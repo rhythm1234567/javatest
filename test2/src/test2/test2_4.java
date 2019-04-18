@@ -57,6 +57,18 @@ public static int [] is_8(String s) {
 	}
 	return x;
 }
+public static void is_10(String s) {
+	
+	String regex="%CXLL=.*?(?=%)";
+	Pattern r=Pattern.compile(regex);
+	Matcher m=r.matcher(s);
+	
+	while(m.find()) {
+		String e=m.group(0);
+		System.out.println(e);
+	}
+	
+}
 	public static void main(String[] args) {
 
 		System.out.println("(1)"+is_1("(0000)0000-0000"));
@@ -68,6 +80,8 @@ public static int [] is_8(String s) {
 		System.out.print("(8)");
 		for(int i=0;i<x.length;i++)
 		System.out.print(x[i]);
+		System.out.print("\n(10)");
+		is_10("%CXLL=123456%CXLL=1%CXLL%CXLL=1233%");
 		
 	}
 
