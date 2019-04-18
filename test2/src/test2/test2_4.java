@@ -16,6 +16,10 @@ public static String is_3(String s) {
 	s=s.replaceAll("(.)\\1+","$1");
 	return s;
 }
+public static String is_4(String s) {
+	s=s.replaceAll("(abc)\\1+","abc");
+	return s;
+}
 public static boolean is_6(String s) {
 	boolean flag=false;
 	String regex=".*abc{1}$";
@@ -28,6 +32,7 @@ public static boolean is_6(String s) {
 
 		System.out.println("(1)"+is_1("(0000)0000-0000"));
 		System.out.println("(3)"+is_3("aaabbbcccd"));
+		System.out.println("(4)"+is_4("abcabbcabcabc"));
 		System.out.println("(6)"+is_6("abc"));
 	}
 
