@@ -57,6 +57,12 @@ public static int [] is_8(String s) {
 	}
 	return x;
 }
+
+public static String is_9(String s) {
+	
+	s=s.replaceAll("pupel","pupil");
+return s;
+}
 public static void is_10(String s) {
 	
 	String regex="%CXLL=.*?(?=%)";
@@ -80,6 +86,7 @@ public static void is_10(String s) {
 		System.out.print("(8)");
 		for(int i=0;i<x.length;i++)
 		System.out.print(x[i]);
+		System.out.println("\n(9)"+is_9("pupelxxxpxpupxpupelx"));
 		System.out.print("\n(10)");
 		is_10("%CXLL=123456%CXLL=1%CXLL%CXLL=123%");
 		
