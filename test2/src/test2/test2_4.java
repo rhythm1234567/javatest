@@ -1,5 +1,8 @@
 package test2;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -40,6 +43,20 @@ public static boolean is_6(String s) {
 	
 }
 
+public static int [] is_8(String s) {
+	int x[]=new int[10];
+	int i=0;
+	String regex="\\d+";
+	Pattern r=Pattern.compile(regex);
+	Matcher m=r.matcher(s);
+	
+	while(m.find()) {
+		String e=m.group(0);
+		x[i]=Integer.parseInt(e);
+		i++;
+	}
+	return x;
+}
 	public static void main(String[] args) {
 
 		System.out.println("(1)"+is_1("(0000)0000-0000"));
@@ -47,6 +64,11 @@ public static boolean is_6(String s) {
 		System.out.println("(3)"+is_3("aaabbbcccd"));
 		System.out.println("(4)"+is_4("abcabbcabcabc"));
 		System.out.println("(6)"+is_6("abc"));
+		int x[]=is_8("1zz25xx11c60xx0xx06x07");
+		System.out.print("(8)");
+		for(int i=0;i<x.length;i++)
+		System.out.print(x[i]);
+		
 	}
 
 
