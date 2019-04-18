@@ -81,7 +81,7 @@ public static void is_10(String s) {
 		for(int i=0;i<x.length;i++)
 		System.out.print(x[i]);
 		System.out.print("\n(10)");
-		is_10("%CXLL=123456%CXLL=1%CXLL%CXLL=1233%");
+		is_10("%CXLL=123456%CXLL=1%CXLL%CXLL=123%");
 		
 	}
 
