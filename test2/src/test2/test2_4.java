@@ -9,9 +9,21 @@ public static boolean is_1(String number) {
 	boolean flag=false;
 	String regex="\\(\\d{4}\\)\\d{4}\\-\\d{4}";
 	flag=number.matches(regex);
-	return flag;
+return flag;
 }
 
+public static void is_2(String s) {
+	
+	String regex="(\\d{1,3}\\.){3}\\d{1,3}";
+	Pattern r=Pattern.compile(regex);
+	Matcher m=r.matcher(s);
+	
+	while(m.find()) {
+		String e=m.group(0);
+		System.out.println(e);
+	}
+	
+}
 public static String is_3(String s) {
 	s=s.replaceAll("(.)\\1+","$1");
 	return s;
@@ -31,6 +43,7 @@ public static boolean is_6(String s) {
 	public static void main(String[] args) {
 
 		System.out.println("(1)"+is_1("(0000)0000-0000"));
+		System.out.print("(2)");is_2("xxx001.021.211.22x2.2.2.2xxxxxx11.2.333.4.5");
 		System.out.println("(3)"+is_3("aaabbbcccd"));
 		System.out.println("(4)"+is_4("abcabbcabcabc"));
 		System.out.println("(6)"+is_6("abc"));
