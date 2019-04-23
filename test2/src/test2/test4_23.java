@@ -33,7 +33,10 @@ package test2;
 		try {
 			int x=t.parseInt("z2");
 		}catch(MyException e) {
-		System.out.println(e);
+		
+		
+			e.printStackTrace();
+		
 		}
 	}
 	}
