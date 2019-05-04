@@ -44,7 +44,7 @@ public class test_1{
 
 			@Override
 			public void accept(Apple a) {
-				// TODO Auto-generated method stub
+		
 				System.out.println(a.color+a.w);
 			}
 			   
