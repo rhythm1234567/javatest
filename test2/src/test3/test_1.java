@@ -1,0 +1,36 @@
+package test3;
+
+import java.util.Objects;
+
+public class test_1{
+	class Apple{
+		String color;
+		int w;
+		public Apple(String c,int w) {this.color=c;this.w=w;}
+	}
+	@FunctionalInterface
+	public interface Consumer<T> {
+
+	    void accept(T t);
+
+	    default Consumer<T> andThen(Consumer<? super T> after) {
+	        Objects.requireNonNull(after);
+	        return (T t) -> { accept(t); after.accept(t); };
+	    }
+	}
+	static class test{	
+		public static void ConsumerApple(Apple[] apps,Consumer<Apple> c){
+		 for(Apple app:apps){
+			 c.accept(app);
+		 }
+	 }
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		test_1 t=new test_1();
+		test_1.Apple a1=t.new Apple("红",1);
+		test t1=new test();
+		t1.ConsumerApple(apps, c);
+	}
+
+}
