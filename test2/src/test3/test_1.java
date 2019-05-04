@@ -40,6 +40,15 @@ public class test_1{
 		app[1]=a1;
 		test.ConsumerApple(app,(Apple a)-> System.out.println(a.color+a.w)
 		 );
+		test.ConsumerApple(app, new Consumer<Apple>(){
+
+			@Override
+			public void accept(Apple a) {
+				// TODO Auto-generated method stub
+				System.out.println(a.color+a.w);
+			}
+			   
+		});
 	}
 
 }
