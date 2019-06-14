@@ -9,7 +9,7 @@ class Student implements Comparable{
 	String name;
 	float score;
 	public Student(int id, String name, float score) {
-		super();
+		
 		this.id = id;
 		this.name = name;
 		this.score = score;
@@ -18,14 +18,18 @@ class Student implements Comparable{
 	public int compareTo(Object o) {
 		Student s=(Student)o;
 		int result=0;
-		if(s.score==this.score) {
-			result=s.name.compareTo(this.name);
-	
+//		if(s.score==this.score) {
+//			result=s.name.compareTo(this.name);
+//	
+//		}
+//		else {
+		result=s.score>score?-1:(s.score==score?0:1);
+		if(result==0) {
+			return s.name.compareTo(name);
 		}
-		else {
-			result=s.score>this.score?1:0;
-		}
-		return result;
+			return result;
+//		}
+//		return result;
 	}
 	
 	
@@ -40,7 +44,7 @@ public class TreesetDemo {
 	public static void main(String[] args) {
 		Student s1=new Student(1,"zz",12);
 		Student s2=new Student(2,"xx",10);
-		Student s3=new Student(3,"ww",12);
+		Student s3=new Student(3,"ww",10);
 		Set<Student> set=new TreeSet<Student>();
 		set.add(s1);
 		set.add(s2);
