@@ -26,7 +26,6 @@ class Student implements Comparable{
 
 	}
 	
-	
 	@Override
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", score=" + score + "]";
