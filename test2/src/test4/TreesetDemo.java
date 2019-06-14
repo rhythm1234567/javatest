@@ -24,6 +24,7 @@ class Student implements Comparable{
 		}
 			return result;
 
+			
 	}
 	@Override
 	public String toString() {
