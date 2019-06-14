@@ -18,18 +18,12 @@ class Student implements Comparable{
 	public int compareTo(Object o) {
 		Student s=(Student)o;
 		int result=0;
-//		if(s.score==this.score) {
-//			result=s.name.compareTo(this.name);
-//	
-//		}
-//		else {
 		result=s.score>score?-1:(s.score==score?0:1);
 		if(result==0) {
 			return s.name.compareTo(name);
 		}
 			return result;
-//		}
-//		return result;
+
 	}
 	
 	
