@@ -23,7 +23,6 @@ class Student implements Comparable{
 			return s.name.compareTo(name);
 		}
 			return result;
-
 	}
 	@Override
 	public String toString() {
