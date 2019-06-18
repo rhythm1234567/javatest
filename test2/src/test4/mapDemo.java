@@ -36,6 +36,7 @@ class stu{
 	public String toString() {
 		return "student [name=" + name + ", age=" + age + "]";
 	}
+	
 }
 public class mapDemo {
 
