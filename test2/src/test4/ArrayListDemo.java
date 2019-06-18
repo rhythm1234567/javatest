@@ -24,7 +24,6 @@ class student implements Comparable<Object>{
 			return sno>stu.sno?1:-1;
 	
 	}
-
 	@Override
 	public String toString() {
 		return "student [sno=" + sno + ", name=" + name + ", score=" + score + "]";
