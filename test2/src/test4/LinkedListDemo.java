@@ -34,7 +34,7 @@ public class LinkedListDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//LinkedListDemo demo=new LinkedListDemo();
+	
 		stack s1 = new stack();
 		s1.push(1);
 		s1.push(2);
