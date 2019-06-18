@@ -46,6 +46,7 @@ class y{
 	public String toString() {
 		return "student [name=" + name + ", age=" + age + "]";
 	}
+	
 }
 public class hashsetDemo {
 
