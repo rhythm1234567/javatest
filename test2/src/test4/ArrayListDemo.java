@@ -27,7 +27,6 @@ class student implements Comparable<Object>{
 	public String toString() {
 		return "student [sno=" + sno + ", name=" + name + ", score=" + score + "]";
 	}
-
 }
 class compares implements Comparator<student>{
 
