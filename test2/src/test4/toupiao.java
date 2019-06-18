@@ -36,12 +36,13 @@ public class toupiao {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		HashMap<String, Integer> hous=new HashMap<>();
-		hou hou1=new hou("1");
-		hou hou2=new hou("2");
-		hou hou3=new hou("3");
+		hou hou1=new hou("人1");
+		hou hou2=new hou("人2");
+		hou hou3=new hou("人3");
 		hous.put(hou1.name,hou1.num);
 		hous.put(hou2.name,hou2.num);
 		hous.put(hou3.name,hou3.num);
+		System.out.print("\n1."+hou1.name+"\n2."+hou2.name+"\n3."+hou3.name+"\n输入选举人姓名:\n");
 		for(int i=0;i<3;i++)
 		{Scanner s=new Scanner(System.in);
 		
