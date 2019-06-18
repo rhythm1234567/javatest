@@ -22,7 +22,6 @@ class student implements Comparable<Object>{
 		student stu=(student)o;
 		
 			return sno>stu.sno?1:-1;
-	
 	}
 	@Override
 	public String toString() {
