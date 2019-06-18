@@ -28,7 +28,6 @@ class queue{
 		return x;
 		
 	}
-	
 }
 public class LinkedListDemo {
 
