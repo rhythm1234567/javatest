@@ -30,7 +30,6 @@ class student implements Comparable<Object>{
 		return "student [sno=" + sno + ", name=" + name + ", score=" + score + "]";
 	}
 
-	
 }
 class compares implements Comparator<student>{
 
