@@ -34,7 +34,7 @@ class hou{
 public class toupiao {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
 		HashMap<String, Integer> hous=new HashMap<>();
 		hou hou1=new hou("人1");
 		hou hou2=new hou("人2");
