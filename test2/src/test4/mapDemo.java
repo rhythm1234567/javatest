@@ -3,6 +3,7 @@ package test4;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 
 class stu{
@@ -56,6 +57,13 @@ public class mapDemo {
 			System.out.println(s+"地址:"+map.get(s));
 		}
 		
+		Set<Entry<stu, String>> set2=map.entrySet();
+		Iterator<Entry<stu, String>> i=set2.iterator();
+		
+		while(i.hasNext()) {
+			Map.Entry<stu, String> s=i.next();
+			System.out.println(s.getKey()+" "+s.getValue());
+		}
 	}
 
 }
