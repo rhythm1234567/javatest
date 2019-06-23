@@ -22,7 +22,7 @@ public class test_1{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		test_1 t=new test_1();
+	
 		Apple a1=new Apple("红",1);
 		
 		Apple[] app=new Apple[2];
